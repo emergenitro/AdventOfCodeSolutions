@@ -20,7 +20,7 @@ with open(os.getcwd() + "\input.txt", "r") as f:
 tempSum = 0
 sumList = []
 for i in data:
-    if i == '\n':
+    if i == "\n":
         sumList.append(tempSum)
         tempSum = 0
     else:
