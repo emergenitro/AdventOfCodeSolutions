@@ -16,6 +16,6 @@ with open(os.getcwd() + "\input.txt", "r") as f:
     lines = f.readlines()
     for i in range(0, len(lines), 3):
         tempList = [lines[j].replace('\n', '') for j in range(i, i+3)]
-        for j in list(set.intersection(*map(set,tempList))):
+        for j in list(set.intersection(*map(set, tempList))):
             totalSum += letters.index(j)+1
 print(totalSum)
