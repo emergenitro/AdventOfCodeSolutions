@@ -9,7 +9,7 @@ import os
 #     if i == '\n':
 #         if maxSum < tempSum:
 #             maxSum = tempSum
-#         tempSum = 0 
+#         tempSum = 0
 #     else:
 #         tempSum += int(i)
 # print(maxSum)
@@ -22,7 +22,7 @@ sumList = []
 for i in data:
     if i == '\n':
         sumList.append(tempSum)
-        tempSum = 0 
+        tempSum = 0
     else:
         tempSum += int(i)
 sumList.sort(reverse=True)
