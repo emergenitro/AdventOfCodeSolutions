@@ -27,6 +27,8 @@ with open(os.getcwd() + "\input.txt", "r") as file:
         line = line.replace("\n", "").split(",")
         line[0], line[1] = line[0].split("-"), line[1].split("-")
         firstSection = [i for i in range(int(line[0][0]), int(line[0][1]) + 1)]
-        secondSection = [i for i in range(int(line[1][0]), int(line[1][1]) + 1)]
-        if (set(firstSection) & set(secondSection)): count += 1
+        secondSection = [i for i in range(
+            int(line[1][0]), int(line[1][1]) + 1)]
+        if (set(firstSection) & set(secondSection)):
+            count += 1
 print(count)
